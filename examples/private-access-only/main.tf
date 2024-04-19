@@ -58,6 +58,8 @@ resource "aws_route53_zone" "private" {
 module "standard" {
   source = "../../"
 
+  license       = var.license
+
   namespace     = var.namespace
   public_access = false
 
