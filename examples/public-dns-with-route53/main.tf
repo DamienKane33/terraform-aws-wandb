@@ -21,9 +21,15 @@ module "wandb_infra" {
   namespace     = var.namespace
   public_access = true
 
+  license = var.wandb_license
+
   domain_name = var.domain
   zone_id     = aws_route53_zone.public.zone_id
   subdomain   = var.subdomain
+  allowed_inbound_cidr      = var.allowed_inbound_cidr
+  allowed_inbound_ipv6_cidr = var.allowed_inbound_ipv6_cidr
+  eks_cluster_version       = var.eks_cluster_version
+
 }
 
 data "aws_eks_cluster" "app_cluster" {

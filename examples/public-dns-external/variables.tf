@@ -1,14 +1,17 @@
 variable "namespace" {
+  default     = "jmswanblab"
   type        = string
   description = "Name prefix used for resources"
 }
 
 variable "domain_name" {
+  default     = "jmswandlab"
   type        = string
   description = "Domain name used to access instance."
 }
 
 variable "zone_id" {
+  default     = "jms-lab.com"
   type        = string
   description = "Id of Route53 zone"
 }
