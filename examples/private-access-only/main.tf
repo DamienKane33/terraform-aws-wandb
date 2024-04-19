@@ -29,7 +29,7 @@ module "networking" {
 
 module "vpn_gateway" {
   source  = "terraform-aws-modules/vpn-gateway/aws"
-  version = "~> 2.0"
+  version = "~> 3.7.2"
 
   vpc_id              = module.networking.vpc_id
   vpn_gateway_id      = module.networking.vgw_id
