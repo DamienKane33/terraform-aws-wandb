@@ -154,7 +154,7 @@ variable "ssl_policy" {
 
 variable "acm_certificate_arn" {
   type        = string
-  default     = null
+  default     = "arn:aws:acm:us-east-2:339712956222:certificate/808bb147-5567-4146-8643-0827d8ae525f"
   description = "The ARN of an existing ACM certificate."
 }
 

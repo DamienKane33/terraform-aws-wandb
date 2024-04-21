@@ -1,5 +1,5 @@
 variable "namespace" {
-  default     = "jmslab"
+  default     = "wandblab"
   type        = string
   description = "Name prefix used for resources"
 }
